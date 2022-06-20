@@ -1,12 +1,20 @@
 {% extends 'base.html' %} {%load static%} 
+{% block title %} Home{% endblock title %}
 <div class="container">
 {% block body %}
 
 {% include 'carousel.html' %}
 
 {% include 'section.html' %}
+{% include 'banner-section.html' with title="WATCH" image="img/slide-1.jpg" %}
+{% include 'section1.html' with col="col-md-3" %}
+
+{% include 'banner-section.html' with title="AUDIO" image="img/slide-1.jpg" %}
+{% include 'section1.html' with col="col-md-3" %}
+{% include 'image.html' %}
 
 {% include 'footer.html' %}
+
 
 {% endblock body %}
     

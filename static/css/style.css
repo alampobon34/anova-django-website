@@ -1,3 +1,7 @@
+body {
+  background-color: #F7F7F7;
+}
+
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
     display: none;
@@ -87,7 +91,6 @@
 
 }
 
-
 .stretched-link:hover {
   color: #0C71B8;
 }
@@ -105,9 +108,24 @@
 
 /*footer end */
 
+
+/*Card */
+
 .card {
   border-radius: 0 !important;
 }
+
+.card-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.section-card {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
 
 
 .section-card:hover {
@@ -118,10 +136,39 @@
 .card-link {
   border-color: #0C71B8 !important;
   border-radius: 0 !important;
+  background-color: #fff !important;
+
 }
 
 
 .card-link:hover {
   background-color: #0C71B8 !important;
   color: #fff;
+}
+
+
+/*Card end */
+
+
+
+/*FadeUp */
+.fade-up {
+  animation: fadeUp 8s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+/*FadeUp end */
+
+.banner-title {
+  border-left: 1px solid;
 }
