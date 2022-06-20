@@ -109,6 +109,7 @@
   border-radius: 0 !important;
 }
 
+
 .section-card:hover {
   box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
   transition-duration: 600ms;
