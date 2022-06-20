@@ -1,3 +1,13 @@
-{% extends 'base.html' %} {%load static%} {% block body %}
-<h1 class="text-light">Hello, world!</h1>
+{% extends 'base.html' %} {%load static%} 
+<div class="container">
+{% block body %}
+
+{% include 'carousel.html' %}
+
+{% include 'section.html' %}
+
+{% include 'footer.html' %}
+
 {% endblock body %}
+    
+</div>
