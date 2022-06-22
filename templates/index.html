@@ -1,21 +1,16 @@
-{% extends 'base.html' %} {%load static%} 
+{% extends 'base.html' %}
+{%load static%} 
 {% block title %} Home{% endblock title %}
 <div class="container">
-{% block body %}
+  {% block body %} 
+  {% include 'carousel.html' %} 
+  {% include 'trendy-item-section.html' %} 
 
-{% include 'carousel.html' %}
+  {% include 'watch-banner-section.html' with title="WATCH" %} 
+  {% include 'watch-section.html' with col="col-md-3" %} 
 
-{% include 'section.html' %}
-{% include 'banner-section.html' with title="WATCH" image="img/slide-1.jpg" %}
-{% include 'section1.html' with col="col-md-3" %}
-
-{% include 'banner-section.html' with title="AUDIO" image="img/slide-1.jpg" %}
-{% include 'section1.html' with col="col-md-3" %}
-{% include 'image.html' %}
-
-{% include 'footer.html' %}
-
-
-{% endblock body %}
-    
+  {% include 'audio-banner-section.html' with title="AUDIO" %} 
+  {% include 'audio-section.html' with col="col-md-3" %} 
+  {% include 'image.html' %} 
+  {% include 'news.html' %} {% include 'footer.html' %} {% endblock body %}
 </div>

@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
   </head>
   <body>
     {% include 'navbar.html' %}
-    {% block body %} {% endblock body %}
+    {% block body %}{{categories}} {% endblock body %}
 
     <script type="text/javascript" src="{% static 'js/jquery-3.6.0.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.popper.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
     
   </body>
 </html>

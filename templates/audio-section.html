@@ -1,0 +1,21 @@
+{% load static %}
+
+<div class="container my-5 reveal fade-left">
+  <div class="row mx-auto">
+    {% for product in audio_products%}
+    <div class="{{col}}">
+      <div class="card section-card">
+        <img
+          src="{{product.image.url}}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">{{product.name}}</h5>
+          <a href="#" class="btn btn-primary stretched-link card-link">View Profile</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

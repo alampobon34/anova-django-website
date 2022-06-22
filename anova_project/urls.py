@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('anovaApp.urls')),
+    path('', include('productApp.urls')),
     path('admin/', admin.site.urls),
 ]
 

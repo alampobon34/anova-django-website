@@ -1,8 +1,8 @@
 {% load static %}
 
-<div class="container my-5 fade-up">
+<div class="container my-5 reveal fade-right">
   <div class="row">
-    <div class="col-md-4">
+    <div class="{{col}}">
       <div class="card section-card">
         <img
           src="{% static 'img/watch.jpg' %}"
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="{{col}}">
       <div class="card section-card">
         <img
           src="{% static 'img/watch.jpg' %}"
@@ -29,7 +29,20 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="{{col}}">
+      <div class="card section-card">
+        <img
+          src="{% static 'img/watch.jpg' %}"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">ANOVA HP222</h5>
+          <a href="#" class="btn btn-primary stretched-link card-link">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <div class="{{col}}">
       <div class="card section-card">
         <img
           src="{% static 'img/watch.jpg' %}"

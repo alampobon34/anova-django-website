@@ -2,69 +2,31 @@ body {
   background-color: #F7F7F7;
 }
 
-@media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-  }
 
-  .navbar .nav-item:hover .nav-link {}
-
-  .navbar .nav-item:hover .dropdown-menu {
-    display: block;
-  }
-
-  .navbar .nav-item .dropdown-menu {
-    margin-top: 5px;
-    transition-duration: 5s !important;
-    transition-delay: 2s !important;
-  }
-}
-
-.navbar .megamenu {
-  padding: 1rem;
-}
-
-/* ============ desktop view ============ */
-@media all and (min-width: 992px) {
-
-  .navbar .has-megamenu {
-    position: static !important;
-  }
-
-  .navbar .megamenu {
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 0;
-  }
-
-}
-
-/* ============ desktop view .end// ============ */
-
-/* ============ mobile view ============ */
-@media(max-width: 991px) {
-
-  .navbar.fixed-top .navbar-collapse,
-  .navbar.sticky-top .navbar-collapse {
-    overflow-y: auto;
-    max-height: 90vh;
-    margin-top: 10px;
-  }
+.dropdown {
+  position: static !important;
 }
 
 
-.navbar .navbar-nav .nav-link {
-  color: #000000;
-  font-size: 1.1em;
-}
 
-.navbar .navbar-nav .nav-link:hover {
-  color: #000000;
+.dropdown-menu {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  margin-top: 0px !important;
+  width: 100% !important;
+  border-radius: 0;
 }
 
 .navbar .navbar-nav .nav-item {
   position: relative;
+
+}
+
+.nav-link {
+  color: #000 !important;
+}
+
+.nav-link:hover {
+  color: #0C71B8 !important;
 }
 
 .navbar .navbar-nav .nav-item::after {
@@ -83,6 +45,9 @@ body {
   width: 100%;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
 
 
 .stretched-link {
@@ -113,11 +78,12 @@ body {
 
 .card {
   border-radius: 0 !important;
+  border: 0px;
 }
 
 .card-title {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .section-card {
@@ -151,12 +117,12 @@ body {
 
 
 
-/*FadeUp */
-.fade-up {
-  animation: fadeUp 8s;
+/*Fade Flash */
+.fade-flash {
+  animation: fadeFlash 6s;
 }
 
-@keyframes fadeUp {
+@keyframes fadeFlash {
   from {
     opacity: 0;
   }
@@ -167,8 +133,101 @@ body {
 
 }
 
-/*FadeUp end */
+/*Fade Flash end */
+
+
 
 .banner-title {
   border-left: 1px solid;
+}
+
+
+
+
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+@media only screen and (max-width: 991px) {
+  .navbar-collapse{
+    background: #343434;
+
+  }
+
+  .nav-link{
+    margin-left: 10px;
+    color: rgb(226, 226, 226) !important;
+  }
+}
+
+
+.menu{
+  margin-top: 0px 5px 5px 5px !important;
+  padding-top: 0px 5px 5px 5px !important;
+
+}
+
+.menu a{
+  text-decoration: none;
+  color:#000;
+}
+
+.menu a:hover {
+  color: #0C71B8 !important;
 }
